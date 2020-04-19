@@ -10,7 +10,7 @@ def midi2sco(ficMIDI, ficScore, beats_per_minute=120, ticks_per_beat=144):
         midi = run(['midi2skini', ficMIDI], stdout=PIPE, check=True)
         mensajes = midi.stdout.decode('utf-8').split('\n')
     except MidiFileError as e:
-        print(f"Error al abrir el fichero {ficMIDI} ({os.strerror(e.returncode)})")
+        print(f'Error al abrir el fichero {ficMIDI} ({os.strerror(e.returncode)})')
         exit(1)
 
     reTempo = re.compile('tempo:\s*(?P<tempo>\d+)')

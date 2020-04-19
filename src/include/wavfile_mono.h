@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-/** 
+/**
     Read input sound filename and set the value of sampling_freq and samples
     This is just a wrapper of the sndfile lib, for the particular case that the input is mono.
     Return: 0 => OK; < 0 => Error.
