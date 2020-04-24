@@ -33,24 +33,24 @@ permitan visualizar el funcionamiento de la curva ADSR.
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus
   parámetros: ataque (A), caída (D), mantenimiento (S) y liberación (R).
 
-  <img src="img/1.png" width="500" align="center">
-  <img src="img/2.png" width="500" align="center">
+  <img src="img/1.PNG" width="500" align="center">
+  <img src="img/2.PNG" width="500" align="center">
 
 * Un instrumento *percusivo*, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya mantenimiemto y el sonido se apague lentamente.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
   En el fichero.orc correspondiente escribimos los siguientes parámetros:
-  <img src="img/4.png" width="500" align="center">
+  <img src="img/4.PNG" width="500" align="center">
     * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
-    <img src="img/5.png" width="500" align="center">
-    <img src="img/3.png" width="500" align="center">
+    <img src="img/5.PNG" width="500" align="center">
+    <img src="img/3.PNG" width="500" align="center">
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución  abrupta del sonido hasta su finalización.
-    <img src="img/21.png" width="500" align="center">
-    <img src="img/6.png" width="500" align="center">
+    <img src="img/21.PNG" width="500" align="center">
+    <img src="img/6.PNG" width="500" align="center">
   - Debera representar en esta memoria **ambos** posibles finales de la nota.
 * Un instrumento *plano*, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En  ellos, el ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también es bastante rápida.
-<img src="img/8.png" width="500" align="center">
-<img src="img/9.png" width="500" align="center">
-<img src="img/7.png" width="500" align="center">
+<img src="img/8.PNG" width="500" align="center">
+<img src="img/9.PNG" width="500" align="center">
+<img src="img/7.PNG" width="500" align="center">
 
 Para los cuatro casos, deberá incluir una gráfica en la que se visualice claramente la curva ADSR. Deberá
 añadir la información necesaria para su correcta interpretación, aunque esa información puede reducirse a
@@ -161,19 +161,19 @@ const vector<float> & Seno::synthesize() {
 
   Efecto vibrato:
 
-  <img src="img/13.png" width="500" align="center">
-  <img src="img/12.png" width="500" align="center">
-  <img src="img/11.png" width="500" align="center">
-  <img src="img/10.png" width="500" align="center">
+  <img src="img/13.PNG" width="500" align="center">
+  <img src="img/12.PNG" width="500" align="center">
+  <img src="img/11.PNG" width="500" align="center">
+  <img src="img/10.PNG" width="500" align="center">
 
   En la gráfica vemos que aparece una variación periódica en la frecuencia como consecuencia del efecto vibrato. Se han especificado los parámetros en las imágenes anterior, como la I y la frecuencia de muestreo.  
 
   Efecto tremolo:
 
-  <img src="img/15.png" width="500" align="center">
-  <img src="img/16.png" width="500" align="center">
-  <img src="img/17.png" width="500" align="center">
-  <img src="img/14.png" width="500" align="center">
+  <img src="img/15.PNG" width="500" align="center">
+  <img src="img/16.PNG" width="500" align="center">
+  <img src="img/17.PNG" width="500" align="center">
+  <img src="img/14.PNG" width="500" align="center">
 
   El efecto de trémolo consiste en una modulación de amplitud de la señal de entrada. La frecuencia se mantiene constante pero por otra parte vemos que la amplitud de la señal fluctua periódicamente. Hemos escuchado el audio para ver que cambios se habian realizado y hemos detectado que la intensidad del sonido variaba pero que el tono era el mismo. Como vemos en la captura de los parámetros del tremolo, aplicamos una amplitud mínima de 0.2. Seguimos visualizando el seno así como sus parámetros de ataque caída, etc.
 
@@ -199,7 +199,7 @@ deberá venir expresado en semitonos.
 
   En el documento .orc de campana describimos los parámetros utilizados paraa simular el sonido del clarinete juntamente con el archivo doremi.osc.
   (Enganxar foto del clarinete.orc)
-  <img src="img/14.png" width="500" align="center">
+  <img src="img/14.PNG" width="500" align="center">
 
   (Para simular el sonido del clarinete, usamos los siguientes valores proporcionados en el paper: N1 = 100, N2 = 20, I = 0.5 y para las componentes del ADSR: Attack = 0.04, D = 0, S = 0.5, R = 0.07.)
 
@@ -207,7 +207,7 @@ deberá venir expresado en semitonos.
 
   De la misma manera que el clarinete, en la foto vemos que el .orc correspondiente a la campana contiene los parámetros necesarios para simularla.
   (Enganxar foto del clarinete.orc)
-  <img src="img/14.png" width="500" align="center">
+  <img src="img/14.PNG" width="500" align="center">
 
 
 
@@ -229,8 +229,8 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos
   necesarios están en directorio indicado).
 
-  <img src="img/18.png" width="500" align="center">
-  <img src="img/19.png" width="500" align="center">
+  <img src="img/18.PNG" width="500" align="center">
+  <img src="img/19.PNG" width="500" align="center">
 
   synth Toy_Story.orc -e effects.orc ToyStory_A_Friend_in_meeffects.sco music/ToyStory_A_Friend_in_meeffects.wav
 
@@ -243,5 +243,5 @@ ficheros.
 
   Usando la canción Hawaii5-0:
 
-  <img src="img/20.png" width="500" align="center">
+  <img src="img/20.PNG" width="500" align="center">
   synth Hawaii.orc -e effects.orc Hawaiieffects.sco music/Hawaiieffects.wav
